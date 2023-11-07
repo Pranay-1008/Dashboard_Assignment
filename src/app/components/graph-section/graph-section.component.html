@@ -1,0 +1,75 @@
+<!-- <div id="container"></div> -->
+<div class="row">
+    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mb-3">
+        <div class="card">
+            <div style="padding: 10px 0px 0px 15px">
+                <div class="row">
+                    <div class="col-8">
+                        <label class="heading">Sales Statistics</label>
+                    </div>
+                    <div class="col-4">
+                        <div class="chart-container">
+                            <select id="dataSelector">
+                              <option value="All Days" selected>All Days</option>
+                              <option value="Mon">Monday</option>
+                              <option value="Tue">Tues</option>
+                              <option value="Wed">Wed</option>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+            <div class="card-body mt-4">
+                <div id="salesGraph"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mb-3">
+        <div class="card">
+            <div style="padding: 10px 0px 0px 15px">
+                <div class="row">
+                    <div class="col-7">
+                        <label class="heading">Balance Overview</label>
+                    </div>
+                    <div class="col-5">
+                        <div class="chart-container">
+                            <div class="chart-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color legend-bkgrd-clr-darkblue"
+                                        style="background-color: #3366CC;"></span>
+                                    <span class="legend-label">Income</span>
+                                </div> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="legend-item">
+                                    <span class="legend-color legend-bkgrd-clr-lightblue"></span>
+                                    <span class="legend-label">Borrow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body mt-4">
+                    <div id="overviewGraph"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 mb-3">
+        <div class="card">
+            <div style="padding: 10px 0px 0px 15px">
+                <div class="row">
+                    <div class="col-9">
+                        <label class="heading">Top Products</label>
+                    </div>
+                    <div class="col">
+                        <div class="chart-container">
+                            <i class="fas fa-caret-down icon-color"></i>
+                    </div>
+                    </div>
+                </div>
+            <div class="card-body">
+                <div id="topProduct"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

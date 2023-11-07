@@ -1,0 +1,42 @@
+#topProduct {
+    background-color: transparent;
+    height: 425px;
+  }
+
+.card-body{
+    padding: 0 0 !important; 
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 18px;
+  }
+  
+  .chart-legend {
+    display: flex;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .legend-color {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+  }
+
+  .legend-bkgrd-clr-darkblue{
+    background-color: var(--blue-color);
+  }
+
+  .legend-bkgrd-clr-lightblue{
+    background-color: var(--light-blue-color);
+  }
+  
+
+  

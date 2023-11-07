@@ -1,0 +1,18 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 200px 150px 120px 120px 120px 80px 50px;
+}
+
+.grid-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 12px;
+}
+
+.grid-item-lebel{
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-weight: 600;
+  font-size: 12px;
+}

@@ -1,0 +1,28 @@
+<div class="card">
+    <span class="heading">New User Registrations</span>
+    <div class="card-body">
+      <div style="height: 210px;overflow-y: scroll;">
+      <div class="grid-container" *ngFor="let row of newUserData; let id = index" >
+        <div class="grid-item">
+            <!-- <img [src]=row.picture class="img-fluid" alt="user-profile"> -->
+            <div class="circle">
+              <img [src]=row.picture alt="Your Image">
+              <div class="icon i" 
+              [ngClass]="{'active': row.isActive ==  true}">
+              </div>
+            </div>
+        </div>
+        <div class="grid-item">{{row.name}} <br/><span>{{row.country}}</span></div>
+        <div class="grid-item">
+          <div class="progress" id="progress_element" style="height: 10px;background-color: #FDFCFF;border-radius: 50px;">
+            <div id="progressBarFill" class="progress-bar" role="progressbar" [style.width.%]="row.progress"  aria-valuemin="0" aria-valuemax="100" aria-valuenow="item.s_allocation" [ngStyle]="{'background-color':getColor(row.progress)}">
+            </div>
+           &nbsp; <span [ngStyle]="{'color':getColor(row.progress)}" class="progress_label">{{row.progress}}%</span>
+        </div>
+        </div>
+        <!-- condition don't know for more button -->
+        <div class="grid-item"><button *ngIf="id == 0" class="more-btn-active">More</button><button *ngIf="id != 0" disabled>More</button></div>
+      </div>
+    </div>
+    </div>
+  </div>

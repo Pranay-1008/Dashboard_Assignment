@@ -1,0 +1,19 @@
+.sideNav-wrapper{
+    height: calc(100vh);
+    background: var(--white-color);
+    overflow-y: auto;
+    padding-top: 45px;
+    .menu{
+        padding-left: 15px;
+        padding-top: 45px;
+    }
+    .nav-item{
+        padding-bottom: 20px
+    }
+  }
+  
+
+  .active {
+    color: var(--blue-color);
+    font-size: 15px;
+  }

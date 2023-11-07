@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+:root {
+  --green-color: #30cd73;
+  --gray-color: #7583a3;
+  --red-color: #ea586c;
+  --white-color: #ffffff;
+  --purple-color: #6d85e6;
+  --blue-color:#4e6ce2;
+  --light-blue-color:#a3b5f6;
+  --blank-color:#34373a;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fc
+}
+
+.card{
+  border: none;
+}
+
+.card-img {
+  height: 34px;
+  color: var(--gray-color);
+  margin-top: 8px;
+  float: right;
+}
+
+.green-badge {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.red-badge {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.gray-badge {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.header-label {
+  font-size: 35px;
+  color: var(--purple-color);
+  font-weight: 500;
+}
+
+.inner-card-sub-label {
+  font-size: 15px;
+  color: var(--gray-color);
+  font-weight: 600;
+}
+
+.inner-card-desc {
+  font-size: 9px;
+  color: var(--gray-color);
+}
+
+.header-label-selection {
+  font-size: 35px;
+  color: var(--purple-color);
+  font-weight: 700;
+}
+
+.heading {
+  font-size: 20px;
+  color: var(--blank-color);
+  padding: 15px 15px 0px 10px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.more-btn-active{
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  border: none;
+  height: 24px;
+  width: 45px;
+}
+
+.icon-color{
+  color: var(--gray-color);
+}

@@ -1,0 +1,33 @@
+<!-- <app-graph-section></app-graph-section> -->
+<!-- <app-top-card></app-top-card>
+<app-recent-orders></app-recent-orders> -->
+<!-- <app-graph-section></app-graph-section> -->
+<!-- <app-sidenav></app-sidenav> -->
+
+
+<header class="hideData">
+    <app-header></app-header>
+</header>
+<section class="wrapper ">
+    <aside class="side-navigation">
+        <app-sidenav></app-sidenav>
+    </aside>
+    <section class="main-wrapper">
+        <div class="row">
+            <app-top-card [topCardData]="topCardData"></app-top-card>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mb-3 ">
+                <app-recent-orders [recentOrderData]="recentOrderData"></app-recent-orders>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3 ">
+                <app-new-user-list [newUserData]="newUserData"></app-new-user-list>
+            </div>
+        </div>
+        <div class="row">
+            <app-graph-section></app-graph-section>
+        </div>
+    </section>
+
+</section>
+

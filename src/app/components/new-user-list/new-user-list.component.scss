@@ -1,0 +1,57 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 70px 120px 140px 70px;
+
+}
+
+.grid-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  font-size: 12px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.progress_label {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.circle {
+height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.circle img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color:var(--blue-color);
+  color: #fff;
+  width: 9px;
+    height: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.active{
+  background-color: var(--green-color);
+}

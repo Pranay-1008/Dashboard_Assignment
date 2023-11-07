@@ -1,0 +1,60 @@
+<!-- <table class="table row-borders">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Customer</th>
+      <th>Products</th>
+      <th>Delivery Date</th>
+      <th>Status</th>
+      <th>Tracking No#</th>
+      <th>Shipping</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of recentOrderData; let id = index">
+      <td>{{id + 1}}</td>
+      <td>{{row.name}}</td>
+      <td>{{row.product}}</td>
+      <td>{{row.delivery_date | date:'d MMM, y'}}</td>
+      <td><span
+          [ngClass]="{'green-badge': row.status === 'Paid', 'red-badge' : row.status === 'Failed', 'gray-badge' : row.status === 'Pending'}">{{row.status}}</span>
+      <td>{{row.tracking_no}}</td>
+      <td>{{row.shipping == true ? 'Yes': 'No'}}</td>
+      <td><a>X</a></td>
+    </tr>
+  </tbody>
+</table> -->
+<div class="card">
+  <span class="heading">Recent Order</span>
+  <div class="card-body">
+    <div class="grid-container">
+      <div class="grid-item-lebel">#</div>
+      <div class="grid-item-lebel">Customer</div>
+      <div class="grid-item-lebel">Products</div>
+      <div class="grid-item-lebel">Delivery Date</div>
+      <div class="grid-item-lebel">Status</div>
+      <div class="grid-item-lebel">Tracking No#</div>
+      <div class="grid-item-lebel">Shipping</div>
+      <div class="grid-item-lebel"></div>
+    </div>
+    <div style="height: 180px;overflow-y: scroll;">
+    <div class="grid-container" *ngFor="let row of recentOrderData; let id = index" >
+      <div class="grid-item"><span *ngIf="id < 9">0</span>{{id + 1}}</div>
+      <div class="grid-item">{{row.name}}</div>
+      <div class="grid-item">{{row.product}}</div>
+      <div class="grid-item">{{row.delivery_date | date:'d MMM, y'}}</div>
+      <div class="grid-item"><span
+          [ngClass]="{'green-badge': row.status === 'Paid', 'red-badge' : row.status === 'Failed', 'gray-badge' : row.status === 'Pending'}">{{row.status}}</span>
+      </div>
+      <div class="grid-item">{{row.tracking_no}}</div>
+      <div class="grid-item">{{row.shipping == true ? 'Yes': 'No'}}</div>
+      <div class="grid-item" (click)="openModal(row)">X</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<ng-template #recentDetail let-d="dismiss">
+  <app-recent-orders-details-modal [passData]="passData"></app-recent-orders-details-modal>
+</ng-template>

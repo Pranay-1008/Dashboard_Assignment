@@ -1,0 +1,48 @@
+.top-card {
+  position: relative;
+  height: 120px;
+  // background-image: linear-gradient(to right, #6E2FC0, #CC3DAD);
+  background-color: white
+}
+
+.inner-card-report-body {
+  padding: 10px 20px 10px 20px
+}
+
+.card-header {
+  height: 55px;
+}
+
+.classimg {
+  height: 34px;
+  color: gray;
+  margin-top: 8px;
+  float: right;
+}
+
+.active{
+  background-color: var(--blue-color);
+  .header-label {
+    font-size: 35px;
+    color: var(--white-color);
+    font-weight: 500;
+  }
+  .inner-card-sub-label {
+    font-size: 15px;
+    color: var(--white-color);
+    font-weight: 500;
+  }
+  .inner-card-desc {
+    font-size: 9px;
+    color: var(--white-color);
+  }
+  .icon-color{
+    color: var(--white-color);
+  }
+}
+
+.icon{
+  font-size: 25px;
+  margin-top: 10px;
+}
+

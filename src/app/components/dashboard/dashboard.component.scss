@@ -1,0 +1,43 @@
+.wrapper{
+    .side-navigation{
+        width: 60px;
+        position: fixed;
+        left: 0;
+        z-index: 98;
+        transition: all 0.3s ease-out;
+        height: 100%;
+        // padding-top: 18px;
+    }
+    .full-sideNav{
+        transition: all 0.3s ease-out;
+        width: 250px;        
+    }
+    .nav-overlay{
+        display: none;
+        transition: all 0.3ms ease-out;
+        position: fixed;
+        z-index: 97;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.25);
+    }
+    .full-sideNav + .nav-overlay{
+        display: block;
+    }
+    
+    .main-wrapper{
+        width: calc(100% );
+        padding-left: 75px;
+        padding-top: 50px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+    }
+  }
+
+
+
+
+  
+  
