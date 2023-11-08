@@ -6,10 +6,10 @@
       <div class="grid-item-lebel">Customer</div>
       <div class="grid-item-lebel">Products</div>
       <div class="grid-item-lebel">Delivery Date</div>
-      <div class="grid-item-lebel">Status</div>
-      <div class="grid-item-lebel">Tracking No#</div>
-      <div class="grid-item-lebel">Shipping</div>
-      <div class="grid-item-lebel"></div>
+      <div class="grid-item-lebel text-center">Status</div>
+      <div class="grid-item-lebel text-center">Tracking No#</div>
+      <div class="grid-item-lebel text-center">Shipping</div>
+      <div class="grid-item-lebel text-center"></div>
     </div>
     <div style="height: 180px;overflow-y: scroll;">
     <div class="grid-container" *ngFor="let row of recentOrderData; let id = index" >
@@ -17,12 +17,12 @@
       <div class="grid-item">{{row.name}}</div>
       <div class="grid-item">{{row.product}}</div>
       <div class="grid-item">{{row.delivery_date | date:'d MMM, y'}}</div>
-      <div class="grid-item"><span
+      <div class="grid-item text-center"><span
           [ngClass]="{'green-badge': row.status === 'Paid', 'red-badge' : row.status === 'Failed', 'gray-badge' : row.status === 'Pending'}">{{row.status}}</span>
       </div>
-      <div class="grid-item">{{row.tracking_no}}</div>
-      <div class="grid-item">{{row.shipping == true ? 'Yes': 'No'}}</div>
-      <div class="grid-item" (click)="openModal(row)">X</div>
+      <div class="grid-item text-center">{{row.tracking_no}}</div>
+      <div class="grid-item text-center">{{row.shipping == true ? 'Yes': 'No'}}</div>
+      <div class="grid-item text-center cursor" (click)="openModal(row)">X</div>
     </div>
   </div>
   </div>
