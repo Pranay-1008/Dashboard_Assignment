@@ -25,7 +25,6 @@ export class DashboardComponent {
           this.topCardData= res.top_cards,
           this.recentOrderData=res.recent_orders,
           this.newUserData=res.new_users
-          
         },
         (err) => {
         }

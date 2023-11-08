@@ -15,27 +15,10 @@ export class RecentOrdersComponent {
   closeResult: any;
   passData:any
 
-  constructor(private dashboardService:DashboardService,private modalService: NgbModal) {
+  constructor(private modalService: NgbModal) {
   }
 
   ngOnInit(): void {
-    // this.getDashBoardData()
-  }
-
-
-  getDashBoardData() {
-    try {this.dashboardService.getDashboardData().subscribe(
-        res => {
-          this.recentOrderData = res.recent_orders
-          console.log(this.recentOrderData);
-          
-        },
-        (err) => {
-        }
-      )
-    } catch (error) {
-      console.log(error)
-    }
   }
 
   openModal(data:any){

@@ -9,28 +9,10 @@ import { DashboardService } from 'src/app/share/services/dashboard.service';
 export class TopCardComponent {
 
   @Input() topCardData:any;
-  constructor(private dashboardService:DashboardService) {
+  constructor() {
   }
 
   ngOnInit(): void {
-    // this.getDashBoardData()
   }
 
-  // getDashBoardData() {
-  //   try {this.dashboardService.getDashboardData().subscribe(
-  //       res => {
-  //         this.topCardData = res.top_cards
-  //         this.onSelectCard(this.topCardData[0])
-  //       },
-  //       (err) => {
-  //       }
-  //     )
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
-
-  onSelectCard(data:any){
-    
-  }
 }

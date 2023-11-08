@@ -9,13 +9,10 @@ import { DashboardService } from 'src/app/share/services/dashboard.service';
 export class NewUserListComponent {
 
   @Input() newUserData:any;
-  constructor(private dashboardService:DashboardService) {
+  constructor() {
   }
 
   ngOnInit(): void {
-    console.log(this.newUserData);
-    
-    // this.getDashBoardData()
   }
 
  getColor(progress:any) {
@@ -35,19 +32,5 @@ export class NewUserListComponent {
       return 'gray';
     }
     return
-  }
-
-  getDashBoardData() {
-    try {this.dashboardService.getDashboardData().subscribe(
-        res => {
-          this.newUserData = res.new_users
-          
-        },
-        (err) => {
-        }
-      )
-    } catch (error) {
-      console.log(error)
-    }
   }
 }

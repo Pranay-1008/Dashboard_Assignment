@@ -1,30 +1,3 @@
-<!-- <table class="table row-borders">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Customer</th>
-      <th>Products</th>
-      <th>Delivery Date</th>
-      <th>Status</th>
-      <th>Tracking No#</th>
-      <th>Shipping</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let row of recentOrderData; let id = index">
-      <td>{{id + 1}}</td>
-      <td>{{row.name}}</td>
-      <td>{{row.product}}</td>
-      <td>{{row.delivery_date | date:'d MMM, y'}}</td>
-      <td><span
-          [ngClass]="{'green-badge': row.status === 'Paid', 'red-badge' : row.status === 'Failed', 'gray-badge' : row.status === 'Pending'}">{{row.status}}</span>
-      <td>{{row.tracking_no}}</td>
-      <td>{{row.shipping == true ? 'Yes': 'No'}}</td>
-      <td><a>X</a></td>
-    </tr>
-  </tbody>
-</table> -->
 <div class="card">
   <span class="heading">Recent Order</span>
   <div class="card-body">

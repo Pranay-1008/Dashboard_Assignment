@@ -1,8 +1,7 @@
 .top-card {
   position: relative;
   height: 120px;
-  // background-image: linear-gradient(to right, #6E2FC0, #CC3DAD);
-  background-color: white
+  background-color: var(--white-color);
 }
 
 .inner-card-report-body {
@@ -15,7 +14,7 @@
 
 .classimg {
   height: 34px;
-  color: gray;
+  color: var(--gray-color);
   margin-top: 8px;
   float: right;
 }
