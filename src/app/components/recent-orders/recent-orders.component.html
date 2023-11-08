@@ -20,7 +20,7 @@
       <div class="grid-item text-center"><span
           [ngClass]="{'green-badge': row.status === 'Paid', 'red-badge' : row.status === 'Failed', 'gray-badge' : row.status === 'Pending'}">{{row.status}}</span>
       </div>
-      <div class="grid-item text-center">{{row.tracking_no}}</div>
+      <div class="grid-item text-center">#{{row.tracking_no}}</div>
       <div class="grid-item text-center">{{row.shipping == true ? 'Yes': 'No'}}</div>
       <div class="grid-item text-center cursor" (click)="openModal(row)">X</div>
     </div>
